@@ -1,0 +1,39 @@
+.list_index_main h1 {
+  // margin: 20px;
+  text-align: center;
+}
+
+.list_cards_box {
+  margin: 50px auto;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  // background-color: white;
+  // border-radius: 10px;
+  // padding: 10px;
+}
+
+// .list_cards_box .btn {
+//   color: white;
+//   background-color: rgba($color: #ffffff, $alpha: .5);
+//   font-family: 'Gantari', sans-serif;
+// }
+
+// .list_cards_box btn:hover {
+//   border: none;
+//   color: rgb(111, 111, 111)
+// }
+
+.list_cards_box .cardd {
+  // background: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+.list_cards_box .btn {
+  margin-top: 20px;
+  font-size: 12px;
+}

@@ -1,0 +1,13 @@
+<div class="list_index_main">
+    <%= link_to "Go back home", lists_home_path, class: "btn btn-outline-dark m-3" %>
+    <h1>All lists:</h1>
+    <div class="list_cards_box">
+    <% @lists.each do |list| %>
+      <div class="cardd" style="width: 140px; height:140px; background: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')">
+        <p><%= link_to list.name, list_path(list), class: "btn btn-outline-light" %></p>
+      </div>
+    <% end %>
+    <%= link_to "Create a new list", lists_new_path, class: "btn btn-outline-dark" %>
+
+  </div>
+</div>

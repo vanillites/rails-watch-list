@@ -1,1 +1,31 @@
-// Specific CSS for your home-page
+.home_page {
+  // background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2059&q=80');
+  // width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+  background: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2059&q=80') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+// .home_box:hover {
+//   background-color: rgba(0, 0, 0, .7) ;
+//   transition: .3s ease-in-out;
+// }
+
+.home_page a {
+  font-family: 'Gantari', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+.home_page a:hover {
+  color: rgb(163, 139, 118);
+  transition: .5s ease-in-out;
+}
