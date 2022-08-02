@@ -1,8 +1,10 @@
-<h1>Add a new bookmark to <%= @list.name %></h1>
-<%= simple_form_for([@list, @bookmark]) do |f| %>
-  <%= f.input :comment, as: :text %>
-  <%= f.input :movie_id, as: :select, collection: @movies, prompt: 'Select movie', label: false %>
-  <%= f.button :submit %>
-<% end %>
+<div class="form_main">
+  <h1>Add a new movie to <em><%= @list.name %></em></h1>
+  <%= simple_form_for([@list, @bookmark]) do |f| %>
+    <%= f.input :comment, as: :text, label: 'Comment:' %>
+    <%= f.input :movie_id, as: :select, collection: @movies, prompt: 'Select movie', label: false %>
+    <%= f.submit 'Add movie', class: "btn btn-outline-dark" %>
+    <%= link_to "Cancel", list_path(@list), class: "btn btn-outline-dark" %>
+  <% end %>
 
-<%= link_to "Cancel", list_path(@list) %>
+</div>

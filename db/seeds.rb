@@ -43,19 +43,36 @@ puts '🌱 Seeding data...'
 
 fetch_data
 
-list_names = %w[horror romance action comedy sci-fi cartoon adventure]
+list_names = %w[Horror Romance Action Comedy Sci-fi Cartoon Adventure]
 
 i2 = 1
 
-20.times do
-  List.create(name: list_names.sample)
-  puts "Seeded #{i2} list(s)!"
-  i2 += 1
-end
+List.create(name: list_names[0], photo_url: "https://images.unsplash.com/photo-1516410529446-2c777cb7366d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80")
+puts "Seeded 1 list!"
+
+List.create(name: list_names[1], photo_url: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80")
+puts "Seeded 2 lists!"
+
+List.create(name: list_names[2], photo_url: "https://images.unsplash.com/photo-1541492845268-2c3c2765dc58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80")
+puts "Seeded 3 lists!"
+
+List.create(name: list_names[3], photo_url: "https://images.unsplash.com/photo-1543584756-8f40a802e14f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+puts "Seeded 4 lists!"
+
+List.create(name: list_names[4], photo_url: "https://images.unsplash.com/photo-1543083115-638c32cd3d58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80")
+puts "Seeded 5 lists!"
+
+List.create(name: list_names[5], photo_url: "https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+puts "Seeded 6 lists!"
+
+List.create(name: list_names[6], photo_url: "https://images.unsplash.com/photo-1631641551258-98cea9aedd91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80")
+puts "Seeded 7 lists!"
+
+
 
 i3 = 1
 20.times do
-  Bookmark.create(comment: 'this is a comment', list_id: (1..10).to_a.sample, movie_id: (1..20).to_a.sample)
+  Bookmark.create(comment: 'this is a comment', list_id: (1..6).to_a.sample, movie_id: (1..20).to_a.sample)
   puts "Seeded #{i3} bookmark(s)!"
   i3 += 1
 end

@@ -1,7 +1,41 @@
 .list_show_box {
-  width: 500px;
+  width: 800px;
   margin: 50px auto;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
+}
+
+.list_show_box_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+
+.list_show_box_cards .card {
+  padding: 5px;
+  background-color: gainsboro;
+  display: flex;
+}
+
+
+.list_show_box h5 {
+  font-size: 14px;
+}
+
+.list_show_box p {
+  font-size: 10px;
+}
+
+.form_main {
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.form_main h1 {
+  font-size: 32px;
 }
